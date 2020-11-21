@@ -20,13 +20,13 @@ type PictureT struct {
 	KeyWords string
 }
 
-//структура, возвращаемая от getMe  набор result
+//структура, возвращаемая от getMe
 type GetMeT struct {
 	Ok     bool         `json:"ok"`
 	Result GetMeResultT `json:"result"`
 }
 
-//структура, возвращаемая от getMe
+//структура, возвращаемая от getMe набор result
 type GetMeResultT struct {
 	Id        int64  `json:"id"`
 	IsBot     bool   `json:"is_bot"`
